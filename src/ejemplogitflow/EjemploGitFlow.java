@@ -16,6 +16,8 @@ public class EjemploGitFlow {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Inicio i = new Inicio();
+                i.setVisible(true);
     }
     
 }

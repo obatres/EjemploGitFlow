@@ -14,6 +14,10 @@ public class Inicio extends javax.swing.JFrame {
     /**
      * Creates new form Inicio
      */
+            public int numero1;
+            public int numero2;
+            public int resultado;
+            public String res;
     public Inicio() {
         initComponents();
     }
@@ -49,6 +53,11 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         jButton2.setText("jButton2");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -95,6 +104,14 @@ public class Inicio extends javax.swing.JFrame {
         // TODO add your handling code here:
         jLabel1.setText(jTextField1.getText()+jTextField2.getText()); 
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        numero1=Integer.parseInt(jTextField1.getText());
+        numero2=Integer.parseInt(jTextField2.getText());
+        resultado = numero1+numero2;
+         System.out.println(resultado);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
